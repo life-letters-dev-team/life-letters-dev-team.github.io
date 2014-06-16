@@ -132,7 +132,8 @@ body {
     margin-top: 5px; }
   #subscribe-frame input {
     width: 100%;
-    max-width: 400px; }
+    max-width: 500px;
+    box-shadow: none; }
     #subscribe-frame input[type="text"], #subscribe-frame input[type="email"] {
       background: transparent;
       border: solid white 2px;
