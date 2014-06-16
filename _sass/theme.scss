@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'fonts/serifa_std65_bold';
+    src: url('fonts/serifastd-bold.eot');
+    src:    url('fonts/serifastd-bold.eot?#iefix') format('embedded-opentype'),
+            url('fonts/serifastd-bold.woff') format('woff'),
+            url('fonts/serifastd-bold.ttf') format('truetype'),
+            url('fonts/serifastd-bold.svg#serifa_std65_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fonts/serifaroman';
+    src: url('fonts/serifa.eot');
+    src:    url('fonts/serifa.eot?#iefix') format('embedded-opentype'),
+            url('fonts/serifa.woff') format('woff'),
+            url('fonts/serifa.ttf') format('truetype'),
+            url('fonts/serifa.svg#serifaroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'serifa_std45_light';
+    src: url('fonts/serifastd-light-webfont.eot');
+    src: url('fonts/serifastd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/serifastd-light-webfont.woff') format('woff'),
+         url('fonts/serifastd-light-webfont.ttf') format('truetype'),
+         url('fonts/serifastd-light-webfont.svg#serifa_std45_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$textColor: #666;
+
+/*  
+	CSS Reset by Eric Meyer - Released under Public Domain
+	http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	// background: transparent;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	max-width: 100%;
+}
+
+
+
+
+
+body {
+	font-size: 17px;
+	line-height: 1.3em;
+	color: $textColor;
+	font-family:'serifa_std45_light', sans-serif;
+	overflow-y: hidden;
+}
+h1, h2, h3 {
+	color: #888;
+}
+h1 { 
+	font-size: 32px; 
+	text-align: center;
+}
+h2 {
+	font-size: 24px;
+}
+p {
+	margin-bottom: 15px;
+}
+
+
+
+.inline-image-line {
+	img {
+		margin-top: -2px;
+	}
+	span {
+		margin-right: 5px;
+	}
+}
+.header {
+
+
+	img {
+		margin: 0px 0 20px 0;
+	}
+}
+
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	$startColor: #f8f8f8;
+	$endColor: #fff;
+	// background: $startColor; /* Old browsers */
+	// background: -moz-linear-gradient(left,  $startColor 0%, $endColor 35%, $endColor 65%, $startColor 100%); /* FF3.6+ */
+	// background: -webkit-gradient(linear, left top, right top, color-stop(0%,$startColor), color-stop(35%,$endColor), color-stop(65%,$endColor), color-stop(100%,$startColor)); /* Chrome,Safari4+ */
+	// background: -webkit-linear-gradient(left,  $startColor 0%,$endColor 35%,$endColor 65%,$startColor 100%); /* Chrome10+,Safari5.1+ */
+	// background: -o-linear-gradient(left,  $startColor 0%,$endColor 35%,$endColor 65%,$startColor 100%); /* Opera 11.10+ */
+	// background: -ms-linear-gradient(left,  $startColor 0%,$endColor 35%,$endColor 65%,$startColor 100%); /* IE10+ */
+	// background: linear-gradient(to right,  $startColor 0%,$endColor 35%,$endColor 65%,$startColor 100%); /* W3C */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$startColor',GradientType=1 ); /* IE6-9 */
+
+	
+	img.bg-letter {
+		position: absolute;
+		opacity: 0.5;
+		z-index: -1;
+
+		// Use nth-child right? No IE8 support unfortunately!
+		&.l1 { left: -5%; }
+		&.l2 { left: 75%; }
+		&.l3 { left: 40%; }
+		&.l4 { left: 50%; }
+	}
+}
+
+#scroll-down {
+	position: absolute;
+	width: 100%;
+	top: 700px; // This is updated onload
+	text-align: center;
+	font-size: 40px;
+}
+
+#committee-frame {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 60px 0;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+
+	h1 {
+		margin: 0 0 40px 0;
+	}
+
+	.committee-members {
+		margin-top: 20px;
+
+		.member {
+			margin-bottom: 20px;
+			h2 {
+				margin: 10px 0 10px 0;
+			}
+			p {
+				padding: 0 20px;
+				font-size: 11pt;
+			}
+			img {
+				box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+				float: left;
+				margin: 0 20px 20px 0;
+				max-width: 150px;
+				border-radius: 4px;
+				max-width: 100px;
+			}
+		}
+	}
+}
+
+#team-container {
+	h1 {
+		margin: 60px 0 40px 0;
+	}
+	.member {
+		text-align: center;
+
+		img {
+			border-radius: 10px;
+			max-width: 150px;
+		}
+		h2 {
+
+		}
+		p {
+			font-size: 12px;
+			line-height: 1.3em;
+		}
+	}
+}
+
+#subscribe-frame {
+	padding: 40px 0;
+	background: #ddd;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	text-align: center;
+
+	label.error {
+		color: red;
+	}
+
+	h1 {
+		margin-bottom: 40px;
+	}
+
+	label {
+		display: block;
+		margin-top: 5px;
+	}
+
+	input {
+		width: 100%;
+		max-width: 400px;
+
+
+		&[type="text"],
+		&[type="email"] {
+			background: transparent;
+			border: solid white 2px;
+			border-radius: 2px;
+			font-size: 18px;
+			line-height: 22px;
+			height: 32px;
+			text-align: center;
+		}
+
+		&[type="submit"] {
+			background: #999;
+			color: #eee;
+			border-radius: 4px;
+			border: 0;
+			padding: 3px;
+			margin: 15px 0;
+
+			&:hover {
+				background: #aaa;
+			}
+		}
+	}
+	.form-row {
+		margin-top: 20px;
+	}
+	p.small {
+		font-size: 14px;
+		margin-top: 5px;
+		line-height: 1.3em;
+	}
+}
+
+#ll-header {
+	padding-left: 40px;
+	text-align: left;
+
+	img#ll-header-logo {
+		margin: 20px 0 10px;
+	}
+
+	@media (max-width: 991px) {
+		text-align: center;
+		padding: 0px;
+	}
+
+	ul.ll-nav {
+		list-style: none;
+		margin: 10px 0 30px 0;
+		padding: 0px;
+
+
+		li {
+			border: solid 1px #999;
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			min-width: 150px;
+			text-align: center;
+
+			a {
+				color: $textColor;
+			}
+			&.active {
+				background: #eee;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+#ll-blurb {
+	padding: 20px 40px 80px 40px;
+	max-width: 500px;
+}
+
+#ll-background-frame {
+	overflow: hidden;
+	position: relative;
+
+	.ll-background {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		min-height: 800px;
+		overflow: hidden;
+		background-image: url('../img/bg-eye.png');
+		background-repeat: no-repeat;
+		background-position: 0% 50%; // left-middle
+		background-size: cover;
+
+		margin-left: 30%;
+		width: 70%;
+
+		@media (max-width: 991px) {
+			margin-left: 40%;
+			width: 60%;
+		}
+		@media(max-width: 767px) {
+			margin-left: 60%;
+			width: 40%;
+		}
+
+		// &.l1 { opacity: 0.1; }
+		// &.l2 { opacity: 0.4; }
+		// &.l3 { opacity: 0.9; }
+	}
+}
+
+
+
+.ll-job-listing {
+	margin-bottom: 40px;
+}
+
+ul {
+	padding: 0 20px 0 40px;
+	margin-bottom: 20px;
+}
+
