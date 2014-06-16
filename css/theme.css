@@ -45,12 +45,15 @@ table {
 img {
   max-width: 100%; }
 
+ul {
+  padding: 0 20px 0 40px;
+  margin-bottom: 20px; }
+
 body {
   font-size: 17px;
   line-height: 1.3em;
   color: #666666;
-  font-family: 'serifa_std45_light', sans-serif;
-  overflow-y: hidden; }
+  font-family: 'serifa_std45_light', sans-serif; }
 
 h1, h2, h3 {
   color: #888; }
@@ -64,6 +67,31 @@ h2 {
 
 p {
   margin-bottom: 15px; }
+
+#ll-header {
+  padding-left: 40px;
+  text-align: left; }
+  #ll-header img#ll-header-logo {
+    margin: 20px 0 10px; }
+  @media (max-width: 991px) {
+    #ll-header {
+      text-align: center;
+      padding: 0px; } }
+  #ll-header ul.ll-nav {
+    list-style: none;
+    margin: 10px 0 30px 0;
+    padding: 0px; }
+    #ll-header ul.ll-nav li {
+      border: solid 1px #999;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      min-width: 150px;
+      text-align: center; }
+      #ll-header ul.ll-nav li a {
+        color: #666666; }
+      #ll-header ul.ll-nav li.active {
+        background: #eee; }
 
 .inline-image-line img {
   margin-top: -2px; }
@@ -89,47 +117,6 @@ body {
       left: 40%; }
     body img.bg-letter.l4 {
       left: 50%; }
-
-#scroll-down {
-  position: absolute;
-  width: 100%;
-  top: 700px;
-  text-align: center;
-  font-size: 40px; }
-
-#committee-frame {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 60px 0;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05); }
-  #committee-frame h1 {
-    margin: 0 0 40px 0; }
-  #committee-frame .committee-members {
-    margin-top: 20px; }
-    #committee-frame .committee-members .member {
-      margin-bottom: 20px; }
-      #committee-frame .committee-members .member h2 {
-        margin: 10px 0 10px 0; }
-      #committee-frame .committee-members .member p {
-        padding: 0 20px;
-        font-size: 11pt; }
-      #committee-frame .committee-members .member img {
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 150px;
-        border-radius: 4px;
-        max-width: 100px; }
-
-#team-container h1 {
-  margin: 60px 0 40px 0; }
-#team-container .member {
-  text-align: center; }
-  #team-container .member img {
-    border-radius: 10px;
-    max-width: 150px; }
-  #team-container .member p {
-    font-size: 12px;
-    line-height: 1.3em; }
 
 #subscribe-frame {
   padding: 40px 0;
@@ -170,31 +157,6 @@ body {
     margin-top: 5px;
     line-height: 1.3em; }
 
-#ll-header {
-  padding-left: 40px;
-  text-align: left; }
-  #ll-header img#ll-header-logo {
-    margin: 20px 0 10px; }
-  @media (max-width: 991px) {
-    #ll-header {
-      text-align: center;
-      padding: 0px; } }
-  #ll-header ul.ll-nav {
-    list-style: none;
-    margin: 10px 0 30px 0;
-    padding: 0px; }
-    #ll-header ul.ll-nav li {
-      border: solid 1px #999;
-      display: inline-block;
-      height: 30px;
-      line-height: 30px;
-      min-width: 150px;
-      text-align: center; }
-      #ll-header ul.ll-nav li a {
-        color: #666666; }
-      #ll-header ul.ll-nav li.active {
-        background: #eee; }
-
 #ll-blurb {
   padding: 20px 40px 80px 40px;
   max-width: 500px; }
@@ -226,7 +188,3 @@ body {
 
 .ll-job-listing {
   margin-bottom: 40px; }
-
-ul {
-  padding: 0 20px 0 40px;
-  margin-bottom: 20px; }

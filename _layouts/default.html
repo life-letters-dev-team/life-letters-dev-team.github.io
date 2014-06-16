@@ -29,18 +29,19 @@
   ga('send', 'pageview');
 </script>
 
+{% if page.splash-bg %}
+<div id="ll-background-frame" data-parallax-port=1>
+    <div class="ll-background"></div>
+    <div class="ll-background" data-parallax="4"></div>
+    <div class="ll-background" data-parallax="8"></div>
+
+{% else %}
 <div style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;">
     <img class="bg-letter l1" src="/img/letter-a-01.png" data-0="top: 200px;" data-1500="top: 0px" />
     <img class="bg-letter l2" src="/img/letter-g-01.png" data-0="top: 400px;" data-1500="top: 200px" />
     <img class="bg-letter l3" src="/img/letter-t-01.png" data-0="top: 100px;" data-1500="top: 0px" />
     <img class="bg-letter l4" src="/img/letter-c-01.png" data-0="top: 600px;" data-1500="top: 200px" />
 </div>
-
-{% if page.splash-bg %}
-<div id="ll-background-frame" data-parallax-port=1>
-    <div class="ll-background"></div>
-    <div class="ll-background" data-parallax="4"></div>
-    <div class="ll-background" data-parallax="8"></div>
 {% endif %}
 
     <div class="container-liquid">
