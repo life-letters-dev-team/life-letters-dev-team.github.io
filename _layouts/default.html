@@ -61,7 +61,9 @@
 
 {{ content }}
 
+{% if page.splash-bg %}
 </div>
+{% endif %}
 
 <div id="subscribe-frame">
     <div class="container">
@@ -102,6 +104,10 @@
         <!--End mc_embed_signup-->
     </div>
 </div>
+
+{% if !page.splash-bg %}
+</div>
+{% endif %}
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="/vendor/jquery/1.11.1/js/jquery.min.js"></script>

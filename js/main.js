@@ -1,7 +1,8 @@
 
 jQuery(document).ready(function() {
 
-	var s = skrollr.init({ forceHeight: false });
+	if ( $(".bg-letter").length )
+		var s = skrollr.init({ forceHeight: false });
 
 	$('[data-parallax-port]').mousemove(function(e) {
 		var $port = $(this),
