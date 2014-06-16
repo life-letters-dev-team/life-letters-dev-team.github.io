@@ -191,7 +191,8 @@ body {
 
 	input {
 		width: 100%;
-		max-width: 400px;
+		max-width: 500px;
+		box-shadow: none;
 
 
 		&[type="text"],
@@ -254,9 +255,13 @@ body {
 		background-position: 0% 50%; // left-middle
 		background-size: cover;
 
-		margin-left: 30%;
-		width: 70%;
-
+		margin-left: 40%;
+		width: 60%;
+		
+		@media (max-width: 1400px) {
+			margin-left: 30%;
+			width: 70%;
+		}
 		@media (max-width: 991px) {
 			margin-left: 40%;
 			width: 60%;
@@ -264,6 +269,7 @@ body {
 		@media(max-width: 767px) {
 			margin-left: 60%;
 			width: 40%;
+			display: none;
 		}
 	}
 }
